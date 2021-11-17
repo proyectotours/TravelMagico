@@ -84,9 +84,25 @@
 /* ========================================= */
          /* ESTILOS GENERALES */
 /* ========================================= */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
 body{
   font-family: var(--font-kameron);
   font-size: var(--size-1-2);
+}
+p{
+  line-height: 27px;
+}
+ul,
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #EC0000;
 }
 
 /* ========================================= */
@@ -119,17 +135,20 @@ body{
   margin: auto;
 }
 .content__flex{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .content__flex__round{
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .content__flex__column{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -137,18 +156,43 @@ body{
 
 
 /* ========================================= */
-          /* TODAS LAS H */
+       /* ESTILOS DE LOS BOTONES */
 /* ========================================= */
-h1, h2, h3, h4, h5, h6{
-  
+.button{
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: var(--bdradius-0-2);
+}
+.verde{
+  background: #028E08;
+}
+.morado{
+  background: #C600CF;
 }
 
 
 /* ========================================= */
-
+        /* ESTILOS INPUT/LABEL */
 /* ========================================= */
-
-
+.input{
+  width: 100%;
+  outline: none;
+  border: 1px solid #CECECE;
+  padding: 15px;
+}
+.input:focus{
+  border-color: #C600CF;
+}
+.input::placeholder{
+  color: #79797999;
+}
+.label{
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+}
 
 
 /* ========================================= */

@@ -4,5 +4,61 @@
 
 .header{
   background: #C9C9C9;
+  margin-top: var(--margin-top);
+  padding: 0 5px;
+  border-radius: var(--bdradius-0-2);
+  box-shadow: 0 3px 0 #000;
 }
+#toggle{
+  display: none;
+}
+.logo{
+  font-size: var(--size-1-5);
+}
+.logo span{
+  font-size: var(--size-1-8);
+  color: #008806;
+}
+.navigation a{
+  display: inline-block;
+  padding: .5rem 1rem;
+  text-shadow: 0 0 2px #FFF;
+  color: #000;
+  transition: all .5s linear;
+}
+.navigation a:hover,
+.active{
+  background: #008806;
+  border-radius: var(--bdradius-0-2);
+}
+
+@media screen and (max-width: 992px) {
+  
+  #toggle{
+    display: block;
+    padding: .5rem 1rem;
+    border: 1px solid #E5E5E5;
+    border-radius: var(--bdradius-0-2);
+  }
+  .navigation{
+    display: none;
+    width: 100%;
+    text-align: center;
+    /* margin: 10px 0; */
+  }
+  .show{
+    display: block;
+  }
+  .navigation a{
+    display: block;
+    padding: 1rem 0; 
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
 
