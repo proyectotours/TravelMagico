@@ -1,3 +1,10 @@
+/* ========================================= */
+         /* ESTILOS GENERALES */
+/* ========================================= */
+body{
+  font-family: var(--font-kameron);
+  font-size: var(--size-1-2);
+}
 
 /* ========================================= */
         /* ESTILOS DEL HEADER / MENU */
@@ -10,7 +17,22 @@
         /* ESTILOS DEL CONTENEDOR */
 /* ========================================= */
 
-
+.content{
+  max-width: 95%;
+  width: 1024px;
+  margin: auto;
+}
+content__flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content__flex__round{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
 /* ========================================= */
