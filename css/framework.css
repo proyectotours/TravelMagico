@@ -134,6 +134,9 @@ a{
   width: 1024px;
   margin: auto;
 }
+.content__100{
+  width: 100%
+}
 .content__flex{
   width: 100%;
   display: flex;
@@ -141,11 +144,17 @@ a{
   align-items: center;
   flex-wrap: wrap;
 }
+.content__flex__center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .content__flex__round{
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .content__flex__column{
   width: 100%;

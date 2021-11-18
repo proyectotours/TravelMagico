@@ -57,8 +57,48 @@
 }
 
 
+/* ======================================== */
+        /* ESTILOS DEL MODAL */
+/* ======================================== */
 
-
-
-
-
+.content__modal{
+  width: 100%;
+  height: 100vh;
+  background: #333333A8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  animation: ventana 1s;
+}
+.modal{
+  width: 90%;
+  background: #C1C1C1;
+  overflow: auto;
+}
+.header__modal{
+  background: #05A1E4;
+  padding: 15px 5px;
+}
+.header__modal .close{
+  font-weight: bold;
+  font-size: var(--size-1-5);
+}
+.main__modal .mv{
+  font-weight: bold;
+}
+.main__modal p{
+  padding: 0 20px;
+}
+.footer__modal{
+  background: #05A1E4;
+  padding: 15px 0;
+  text-align: center;
+}
+@keyframes ventana {
+  from{margin-top: -330px; opacity: 0;}
+  to{margin-top: 0; opacity: 1;}
+}
